@@ -78,7 +78,7 @@ hr {
     border: solid #dddddd;
     margin: 90px auto;
     height: auto;
-    background-color: rosybrown;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     z-index: -1;
 }
@@ -143,53 +143,41 @@ input[type=submit]:hover {
 }
 
 /* Create frame for the pictures */
-div.gallery {
+.gallery {
     margin: 50px;
     border: 1px solid #ccc;
     float: left;
     width: 220px;
-    background-color: #4aaaa5;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Create hover effect when hovering over pictures */
-div.gallery:hover {
+.gallery:hover {
     border: 1px solid #777;
 }
 
 /* Format and resize images */
-div.gallery img {
+.gallery img {
     position: relative;
     float: left;
     width:  220px;
-    height: 130px;
+    height: 150px;
     background-repeat:   no-repeat;
     background-size:     cover;
 }
 
 /* Description for each picture */
-div.description {
-    padding: 15px;
+.description {
+    position: absolute;
+    bottom: 10px;
+    background-color: #4aaaa5;
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-/* Make sure paragraph stay clear and in place */
-.clearfix::after {
-    content: "";
-    clear: both;
-}
-
-/* Create the upper part of the footer */
-.upperfooter {
-    color: black;
-    background-color: #4aaaa5;
-    margin: 0;
-    text-align: center;
-    height: 60px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 /* Create footer text "Copyright" */
@@ -211,6 +199,8 @@ div.description {
     bottom: 0;
     width: 100%;
     z-index: 100;
+    border-top: 10px solid #4aaaa5;
+    
 }
   
     
